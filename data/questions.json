@@ -1,0 +1,802 @@
+[
+  {
+    "question": "Apa simbol kimia untuk emas?",
+    "rightAnswer": "Au",
+    "answer1": "Ag",
+    "answer2": "Fe",
+    "answer3": "Cu",
+    "category": "Science"
+  },
+  {
+    "question": "Apa planet terbesar di tata surya?",
+    "rightAnswer": "Jupiter",
+    "answer1": "Mars",
+    "answer2": "Saturnus",
+    "answer3": "Neptunus",
+    "category": "Science"
+  },
+  {
+    "question": "Siapa yang menemukan teori relativitas?",
+    "rightAnswer": "Albert Einstein",
+    "answer1": "Isaac Newton",
+    "answer2": "Galileo Galilei",
+    "answer3": "Nikola Tesla",
+    "category": "Science"
+  },
+  {
+    "question": "Berapa jumlah tulang pada tubuh manusia dewasa?",
+    "rightAnswer": "206",
+    "answer1": "180",
+    "answer2": "220",
+    "answer3": "250",
+    "category": "Science"
+  },
+  {
+    "question": "Apa unsur paling melimpah di atmosfer bumi?",
+    "rightAnswer": "Nitrogen",
+    "answer1": "Oksigen",
+    "answer2": "Karbon Dioksida",
+    "answer3": "Hidrogen",
+    "category": "Science"
+  },
+  {
+    "question": "Siapa yang menemukan gaya gravitasi?",
+    "rightAnswer": "Isaac Newton",
+    "answer1": "Albert Einstein",
+    "answer2": "Galileo Galilei",
+    "answer3": "Nikola Tesla",
+    "category": "Science"
+  },
+  {
+    "question": "Apa hewan tercepat di dunia?",
+    "rightAnswer": "Cheetah",
+    "answer1": "Elang Peregrine",
+    "answer2": "Singa",
+    "answer3": "Kuda",
+    "category": "Science"
+  },
+  {
+    "question": "Bagian mana dari sel yang mengandung DNA?",
+    "rightAnswer": "Inti sel",
+    "answer1": "Mitokondria",
+    "answer2": "Ribosom",
+    "answer3": "Sitoplasma",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama gas yang manusia hirup untuk bernapas?",
+    "rightAnswer": "Oksigen",
+    "answer1": "Nitrogen",
+    "answer2": "Karbon Dioksida",
+    "answer3": "Hidrogen",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama alat yang digunakan untuk mengukur gempa bumi?",
+    "rightAnswer": "Seismograf",
+    "answer1": "Barometer",
+    "answer2": "Hidrometer",
+    "answer3": "Anemometer",
+    "category": "Science"
+  },
+  {
+    "question": "Berapa jumlah planet di tata surya?",
+    "rightAnswer": "8",
+    "answer1": "7",
+    "answer2": "9",
+    "answer3": "10",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama lapisan terluar bumi?",
+    "rightAnswer": "Kerak bumi",
+    "answer1": "Mantel bumi",
+    "answer2": "Inti luar",
+    "answer3": "Inti dalam",
+    "category": "Science"
+  },
+  {
+    "question": "Siapa ilmuwan yang menemukan penisilin?",
+    "rightAnswer": "Alexander Fleming",
+    "answer1": "Louis Pasteur",
+    "answer2": "Marie Curie",
+    "answer3": "Robert Koch",
+    "category": "Science"
+  },
+  {
+    "question": "Berapa suhu titik beku air dalam skala Celcius?",
+    "rightAnswer": "0°C",
+    "answer1": "100°C",
+    "answer2": "10°C",
+    "answer3": "-10°C",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama planet yang memiliki cincin terbesar?",
+    "rightAnswer": "Saturnus",
+    "answer1": "Jupiter",
+    "answer2": "Uranus",
+    "answer3": "Neptunus",
+    "category": "Science"
+  },
+  {
+    "question": "Bagian mata mana yang mengontrol jumlah cahaya yang masuk?",
+    "rightAnswer": "Pupil",
+    "answer1": "Iris",
+    "answer2": "Kornea",
+    "answer3": "Retina",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama zat yang memberi warna hijau pada tumbuhan?",
+    "rightAnswer": "Klorofil",
+    "answer1": "Hemoglobin",
+    "answer2": "Karoten",
+    "answer3": "Melanin",
+    "category": "Science"
+  },
+  {
+    "question": "Bagian tubuh mana yang memompa darah?",
+    "rightAnswer": "Jantung",
+    "answer1": "Paru-paru",
+    "answer2": "Ginjal",
+    "answer3": "Hati",
+    "category": "Science"
+  },
+  {
+    "question": "Apa nama gelombang suara dengan frekuensi tinggi yang digunakan oleh kelelawar?",
+    "rightAnswer": "Ultrasonik",
+    "answer1": "Infrasonik",
+    "answer2": "Elektromagnetik",
+    "answer3": "Mekanik",
+    "category": "Science"
+  },
+  {
+    "question": "Apa zat yang digunakan tanaman untuk fotosintesis?",
+    "rightAnswer": "Karbon Dioksida",
+    "answer1": "Oksigen",
+    "answer2": "Nitrogen",
+    "answer3": "Hidrogen",
+    "category": "Science"
+  },
+  {
+    "question": "Siapa yang memimpin Revolusi Amerika?",
+    "rightAnswer": "George Washington",
+    "answer1": "Thomas Jefferson",
+    "answer2": "Benjamin Franklin",
+    "answer3": "John Adams",
+    "category": "History"
+  },
+  {
+    "question": "Kapan Kekaisaran Ottoman runtuh?",
+    "rightAnswer": "1922",
+    "answer1": "1918",
+    "answer2": "1939",
+    "answer3": "1945",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang dikenal sebagai 'Bapak Pendiri' Republik Indonesia?",
+    "rightAnswer": "Soekarno",
+    "answer1": "Soeharto",
+    "answer2": "Mohammad Hatta",
+    "answer3": "Tan Malaka",
+    "category": "History"
+  },
+  {
+    "question": "Apa nama perjanjian yang mengakhiri Perang Dunia I?",
+    "rightAnswer": "Perjanjian Versailles",
+    "answer1": "Perjanjian Tordesillas",
+    "answer2": "Perjanjian Westfalen",
+    "answer3": "Perjanjian Yalta",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang pertama kali menemukan jalur laut ke India?",
+    "rightAnswer": "Vasco da Gama",
+    "answer1": "Ferdinand Magellan",
+    "answer2": "Christopher Columbus",
+    "answer3": "Marco Polo",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang memimpin ekspedisi pertama mengelilingi dunia?",
+    "rightAnswer": "Ferdinand Magellan",
+    "answer1": "James Cook",
+    "answer2": "Vasco da Gama",
+    "answer3": "Hernán Cortés",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang bertanggung jawab atas pembangunan Tembok Besar China?",
+    "rightAnswer": "Dinasti Qin",
+    "answer1": "Dinasti Han",
+    "answer2": "Dinasti Tang",
+    "answer3": "Dinasti Ming",
+    "category": "History"
+  },
+  {
+    "question": "Siapa raja Mesir yang terkenal dengan piramidannya?",
+    "rightAnswer": "Firaun Khufu",
+    "answer1": "Firaun Ramses II",
+    "answer2": "Firaun Tutankhamun",
+    "answer3": "Firaun Akhenaten",
+    "category": "History"
+  },
+  {
+    "question": "Siapa presiden pertama Indonesia?",
+    "rightAnswer": "Soekarno",
+    "answer1": "Mohammad Hatta",
+    "answer2": "Soeharto",
+    "answer3": "B.J. Habibie",
+    "category": "History"
+  },
+  {
+    "question": "Dimana lokasi Perang Troya dalam mitologi Yunani?",
+    "rightAnswer": "Turki",
+    "answer1": "Yunani",
+    "answer2": "Italia",
+    "answer3": "Mesir",
+    "category": "History"
+  },
+  {
+    "question": "Siapa Kaisar pertama Romawi?",
+    "rightAnswer": "Augustus",
+    "answer1": "Julius Caesar",
+    "answer2": "Nero",
+    "answer3": "Caligula",
+    "category": "History"
+  },
+  {
+    "question": "Apa nama perang antara Inggris dan Prancis yang berlangsung selama lebih dari 100 tahun?",
+    "rightAnswer": "Perang Seratus Tahun",
+    "answer1": "Perang Dunia I",
+    "answer2": "Perang Napoleon",
+    "answer3": "Perang Tiga Puluh Tahun",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang memimpin Revolusi Industri di Inggris?",
+    "rightAnswer": "James Watt",
+    "answer1": "Adam Smith",
+    "answer2": "Isaac Newton",
+    "answer3": "Michael Faraday",
+    "category": "History"
+  },
+  {
+    "question": "Apa nama perang saudara di Spanyol tahun 1936-1939?",
+    "rightAnswer": "Perang Saudara Spanyol",
+    "answer1": "Perang Dunia II",
+    "answer2": "Perang Napoleon",
+    "answer3": "Perang Dingin",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang mendirikan Kekaisaran Mongol?",
+    "rightAnswer": "Genghis Khan",
+    "answer1": "Kublai Khan",
+    "answer2": "Attila the Hun",
+    "answer3": "Timur Lenk",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang menulis 'The Prince'?",
+    "rightAnswer": "Niccolò Machiavelli",
+    "answer1": "Plato",
+    "answer2": "Aristoteles",
+    "answer3": "Sun Tzu",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang menemukan Amerika sebelum Columbus?",
+    "rightAnswer": "Leif Erikson",
+    "answer1": "Marco Polo",
+    "answer2": "Ferdinand Magellan",
+    "answer3": "Amerigo Vespucci",
+    "category": "History"
+  },
+  {
+    "question": "Kapan Revolusi Prancis dimulai?",
+    "rightAnswer": "1789",
+    "answer1": "1776",
+    "answer2": "1812",
+    "answer3": "1848",
+    "category": "History"
+  },
+  {
+    "question": "Apa nama dokumen yang membatasi kekuasaan Raja Inggris pada tahun 1215?",
+    "rightAnswer": "Magna Carta",
+    "answer1": "Deklarasi Hak Asasi Manusia",
+    "answer2": "Konstitusi Inggris",
+    "answer3": "Piagam Atlantik",
+    "category": "History"
+  },
+  {
+    "question": "Siapa yang memimpin tentara Sekutu dalam Perang Dunia II di Eropa?",
+    "rightAnswer": "Dwight D. Eisenhower",
+    "answer1": "Winston Churchill",
+    "answer2": "George S. Patton",
+    "answer3": "Douglas MacArthur",
+    "category": "History"
+  },
+  {
+    "question": "Berapakah hasil dari 7 × 8?",
+    "rightAnswer": "56",
+    "answer1": "48",
+    "answer2": "64",
+    "answer3": "54",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah akar kuadrat dari 144?",
+    "rightAnswer": "12",
+    "answer1": "14",
+    "answer2": "10",
+    "answer3": "16",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah nilai dari π (Pi) dalam dua desimal?",
+    "rightAnswer": "3.14",
+    "answer1": "3.12",
+    "answer2": "3.16",
+    "answer3": "3.18",
+    "category": "Math"
+  },
+  {
+    "question": "Apa hasil dari 15 + 27?",
+    "rightAnswer": "42",
+    "answer1": "40",
+    "answer2": "45",
+    "answer3": "38",
+    "category": "Math"
+  },
+  {
+    "question": "Jika x = 5 dan y = 3, berapakah nilai dari 2x + y?",
+    "rightAnswer": "13",
+    "answer1": "10",
+    "answer2": "15",
+    "answer3": "12",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 81 ÷ 9?",
+    "rightAnswer": "9",
+    "answer1": "8",
+    "answer2": "7",
+    "answer3": "10",
+    "category": "Math"
+  },
+  {
+    "question": "Sebuah segitiga memiliki sudut 60° dan 90°. Berapakah sudut ketiga?",
+    "rightAnswer": "30°",
+    "answer1": "45°",
+    "answer2": "25°",
+    "answer3": "50°",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 2⁵?",
+    "rightAnswer": "32",
+    "answer1": "25",
+    "answer2": "64",
+    "answer3": "16",
+    "category": "Math"
+  },
+  {
+    "question": "Apa hasil dari 100 ÷ 4?",
+    "rightAnswer": "25",
+    "answer1": "20",
+    "answer2": "30",
+    "answer3": "22",
+    "category": "Math"
+  },
+  {
+    "question": "Apa rumus luas lingkaran?",
+    "rightAnswer": "πr²",
+    "answer1": "2πr",
+    "answer2": "πd",
+    "answer3": "r²/2",
+    "category": "Math"
+  },
+  {
+    "question": "Jika 3x = 15, berapakah nilai x?",
+    "rightAnswer": "5",
+    "answer1": "3",
+    "answer2": "7",
+    "answer3": "6",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 9²?",
+    "rightAnswer": "81",
+    "answer1": "72",
+    "answer2": "64",
+    "answer3": "99",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 1/2 + 1/3?",
+    "rightAnswer": "5/6",
+    "answer1": "2/5",
+    "answer2": "1/5",
+    "answer3": "3/4",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah keliling segitiga dengan sisi 3 cm, 4 cm, dan 5 cm?",
+    "rightAnswer": "12 cm",
+    "answer1": "10 cm",
+    "answer2": "15 cm",
+    "answer3": "11 cm",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 5! (faktorial 5)?",
+    "rightAnswer": "120",
+    "answer1": "60",
+    "answer2": "100",
+    "answer3": "80",
+    "category": "Math"
+  },
+  {
+    "question": "Apa sebutan untuk sudut lebih dari 90° tapi kurang dari 180°?",
+    "rightAnswer": "Sudut tumpul",
+    "answer1": "Sudut lancip",
+    "answer2": "Sudut siku-siku",
+    "answer3": "Sudut lurus",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari 0.75 × 4?",
+    "rightAnswer": "3",
+    "answer1": "2.5",
+    "answer2": "3.5",
+    "answer3": "2",
+    "category": "Math"
+  },
+  {
+    "question": "Jika sebuah kubus memiliki panjang sisi 6 cm, berapakah volumenya?",
+    "rightAnswer": "216 cm³",
+    "answer1": "125 cm³",
+    "answer2": "200 cm³",
+    "answer3": "150 cm³",
+    "category": "Math"
+  },
+  {
+    "question": "Jika 2x - 4 = 10, berapakah nilai x?",
+    "rightAnswer": "7",
+    "answer1": "5",
+    "answer2": "6",
+    "answer3": "8",
+    "category": "Math"
+  },
+  {
+    "question": "Berapakah hasil dari ⅓ × 9?",
+    "rightAnswer": "3",
+    "answer1": "6",
+    "answer2": "2",
+    "answer3": "4",
+    "category": "Math"
+  },
+  {
+    "question": "Siapakah penemu World Wide Web (WWW)?",
+    "rightAnswer": "Tim Berners-Lee",
+    "answer1": "Bill Gates",
+    "answer2": "Steve Jobs",
+    "answer3": "Mark Zuckerberg",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa kepanjangan dari CPU dalam komputer?",
+    "rightAnswer": "Central Processing Unit",
+    "answer1": "Computer Processing Unit",
+    "answer2": "Central Program Unit",
+    "answer3": "Control Processing Unit",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa nama sistem operasi open-source yang paling populer?",
+    "rightAnswer": "Linux",
+    "answer1": "Windows",
+    "answer2": "macOS",
+    "answer3": "iOS",
+    "category": "Technology"
+  },
+  {
+    "question": "Perusahaan teknologi mana yang pertama kali memperkenalkan iPhone?",
+    "rightAnswer": "Apple",
+    "answer1": "Samsung",
+    "answer2": "Microsoft",
+    "answer3": "Google",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa fungsi dari HTML dalam pembuatan website?",
+    "rightAnswer": "Membuat struktur halaman",
+    "answer1": "Menjalankan program",
+    "answer2": "Menyimpan database",
+    "answer3": "Mengatur keamanan",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa itu Artificial Intelligence (AI)?",
+    "rightAnswer": "Kecerdasan buatan",
+    "answer1": "Bahasa pemrograman",
+    "answer2": "Jenis komputer",
+    "answer3": "Algoritma pencarian",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa nama perusahaan yang mengembangkan sistem operasi Windows?",
+    "rightAnswer": "Microsoft",
+    "answer1": "Apple",
+    "answer2": "IBM",
+    "answer3": "Google",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa yang dimaksud dengan cloud computing?",
+    "rightAnswer": "Penyimpanan dan pemrosesan data di internet",
+    "answer1": "Penyimpanan data di hard drive",
+    "answer2": "Jenis jaringan komputer",
+    "answer3": "Proses backup otomatis",
+    "category": "Technology"
+  },
+  {
+    "question": "Perusahaan mana yang mengembangkan Android?",
+    "rightAnswer": "Google",
+    "answer1": "Apple",
+    "answer2": "Samsung",
+    "answer3": "Microsoft",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa nama bahasa pemrograman yang digunakan untuk mengembangkan aplikasi Android?",
+    "rightAnswer": "Java",
+    "answer1": "Python",
+    "answer2": "Swift",
+    "answer3": "C++",
+    "category": "Technology"
+  },
+  {
+    "question": "Siapa yang dikenal sebagai pendiri Microsoft?",
+    "rightAnswer": "Bill Gates",
+    "answer1": "Steve Jobs",
+    "answer2": "Elon Musk",
+    "answer3": "Mark Zuckerberg",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa yang dimaksud dengan VPN?",
+    "rightAnswer": "Virtual Private Network",
+    "answer1": "Very Private Network",
+    "answer2": "Virtual Public Network",
+    "answer3": "Visible Private Network",
+    "category": "Technology"
+  },
+  {
+    "question": "Perangkat keras yang berfungsi untuk menyimpan data secara permanen adalah?",
+    "rightAnswer": "Hard drive",
+    "answer1": "RAM",
+    "answer2": "CPU",
+    "answer3": "GPU",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa yang dimaksud dengan IoT (Internet of Things)?",
+    "rightAnswer": "Jaringan perangkat yang saling terhubung melalui internet",
+    "answer1": "Teknologi baru untuk komputer",
+    "answer2": "Sistem keamanan internet",
+    "answer3": "Jaringan sosial",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa itu firewall dalam keamanan komputer?",
+    "rightAnswer": "Sistem keamanan untuk mencegah akses tidak sah",
+    "answer1": "Perangkat penyimpanan data",
+    "answer2": "Jaringan komputer",
+    "answer3": "Sistem enkripsi data",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa itu phishing dalam dunia cyber security?",
+    "rightAnswer": "Upaya penipuan untuk mendapatkan informasi pribadi",
+    "answer1": "Serangan malware",
+    "answer2": "Perangkat lunak antivirus",
+    "answer3": "Jenis jaringan komputer",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa kepanjangan dari URL dalam dunia internet?",
+    "rightAnswer": "Uniform Resource Locator",
+    "answer1": "Universal Resource Locator",
+    "answer2": "Unique Resource Link",
+    "answer3": "User Resource Link",
+    "category": "Technology"
+  },
+  {
+    "question": "Perangkat apa yang digunakan untuk mengubah sinyal digital menjadi sinyal analog?",
+    "rightAnswer": "Modem",
+    "answer1": "Router",
+    "answer2": "Switch",
+    "answer3": "Hub",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa yang dimaksud dengan open-source software?",
+    "rightAnswer": "Perangkat lunak yang sumber kodenya dapat diakses oleh publik",
+    "answer1": "Perangkat lunak berbayar",
+    "answer2": "Sistem operasi komputer",
+    "answer3": "Perangkat lunak tertutup",
+    "category": "Technology"
+  },
+  {
+    "question": "Apa yang dimaksud dengan big data?",
+    "rightAnswer": "Kumpulan data yang sangat besar dan kompleks",
+    "answer1": "Server penyimpanan data",
+    "answer2": "Jenis database",
+    "answer3": "Data yang dikompresi",
+    "category": "Technology"
+  },
+  {
+    "question": "Siapa presiden pertama Amerika Serikat?",
+    "rightAnswer": "George Washington",
+    "answer1": "Abraham Lincoln",
+    "answer2": "Thomas Jefferson",
+    "answer3": "John Adams",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama organisasi internasional yang bertujuan menjaga perdamaian dunia?",
+    "rightAnswer": "Perserikatan Bangsa-Bangsa (PBB)",
+    "answer1": "Uni Eropa",
+    "answer2": "NATO",
+    "answer3": "ASEAN",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa yang menjabat sebagai Perdana Menteri Inggris saat Brexit terjadi?",
+    "rightAnswer": "Boris Johnson",
+    "answer1": "David Cameron",
+    "answer2": "Theresa May",
+    "answer3": "Tony Blair",
+    "category": "Politics"
+  },
+  {
+    "question": "Negara mana yang memiliki sistem pemerintahan komunis terbesar di dunia saat ini?",
+    "rightAnswer": "Tiongkok",
+    "answer1": "Kuba",
+    "answer2": "Vietnam",
+    "answer3": "Korea Utara",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa yang menjabat sebagai Presiden Rusia sejak tahun 2000, dengan jeda antara 2008-2012?",
+    "rightAnswer": "Vladimir Putin",
+    "answer1": "Dmitry Medvedev",
+    "answer2": "Mikhail Gorbachev",
+    "answer3": "Boris Yeltsin",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama lembaga legislatif tertinggi di Amerika Serikat?",
+    "rightAnswer": "Kongres",
+    "answer1": "Senat",
+    "answer2": "Parlemen",
+    "answer3": "Majelis Nasional",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama sistem pemerintahan di mana rakyat memiliki kekuasaan tertinggi?",
+    "rightAnswer": "Demokrasi",
+    "answer1": "Monarki",
+    "answer2": "Oligarki",
+    "answer3": "Diktator",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa yang saat ini menjabat sebagai Sekretaris Jenderal PBB?",
+    "rightAnswer": "António Guterres",
+    "answer1": "Ban Ki-moon",
+    "answer2": "Kofi Annan",
+    "answer3": "Javier Pérez de Cuéllar",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama perjanjian yang mengakhiri Perang Dunia I?",
+    "rightAnswer": "Perjanjian Versailles",
+    "answer1": "Perjanjian Geneva",
+    "answer2": "Perjanjian Potsdam",
+    "answer3": "Perjanjian Paris",
+    "category": "Politics"
+  },
+  {
+    "question": "Negara mana yang memiliki sistem pemerintahan teokrasi?",
+    "rightAnswer": "Iran",
+    "answer1": "Arab Saudi",
+    "answer2": "Afghanistan",
+    "answer3": "Pakistan",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa presiden Amerika Serikat yang mengundurkan diri karena skandal Watergate?",
+    "rightAnswer": "Richard Nixon",
+    "answer1": "Gerald Ford",
+    "answer2": "John F. Kennedy",
+    "answer3": "Lyndon B. Johnson",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama persekutuan militer yang didirikan pada tahun 1949 untuk melawan ancaman Uni Soviet?",
+    "rightAnswer": "NATO",
+    "answer1": "PBB",
+    "answer2": "Uni Eropa",
+    "answer3": "Pakta Warsawa",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa pemimpin revolusi yang mendirikan Republik Rakyat Tiongkok pada tahun 1949?",
+    "rightAnswer": "Mao Zedong",
+    "answer1": "Chiang Kai-shek",
+    "answer2": "Deng Xiaoping",
+    "answer3": "Sun Yat-sen",
+    "category": "Politics"
+  },
+  {
+    "question": "Negara mana yang pertama kali mengadopsi sistem pemerintahan demokrasi?",
+    "rightAnswer": "Yunani",
+    "answer1": "Roma",
+    "answer2": "Amerika Serikat",
+    "answer3": "Prancis",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama majelis tinggi dalam sistem parlemen Inggris?",
+    "rightAnswer": "House of Lords",
+    "answer1": "House of Commons",
+    "answer2": "Senate",
+    "answer3": "Congress",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa pemimpin Afrika Selatan yang memenangkan Hadiah Nobel Perdamaian karena mengakhiri apartheid?",
+    "rightAnswer": "Nelson Mandela",
+    "answer1": "Desmond Tutu",
+    "answer2": "Frederik Willem de Klerk",
+    "answer3": "Robert Mugabe",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama dokumen yang menjadi dasar konstitusi Amerika Serikat?",
+    "rightAnswer": "Konstitusi Amerika Serikat",
+    "answer1": "Deklarasi Kemerdekaan",
+    "answer2": "Bill of Rights",
+    "answer3": "Federalist Papers",
+    "category": "Politics"
+  },
+  {
+    "question": "Negara mana yang memiliki sistem pemerintahan parlementer dengan raja sebagai kepala negara?",
+    "rightAnswer": "Inggris",
+    "answer1": "Amerika Serikat",
+    "answer2": "Tiongkok",
+    "answer3": "Prancis",
+    "category": "Politics"
+  },
+  {
+    "question": "Siapa pemimpin Jerman yang mempersatukan kembali Jerman Barat dan Timur pada tahun 1990?",
+    "rightAnswer": "Helmut Kohl",
+    "answer1": "Angela Merkel",
+    "answer2": "Willy Brandt",
+    "answer3": "Konrad Adenauer",
+    "category": "Politics"
+  },
+  {
+    "question": "Apa nama pemilu di Amerika Serikat yang menentukan siapa yang akan menjadi presiden?",
+    "rightAnswer": "Electoral College",
+    "answer1": "Senate Election",
+    "answer2": "House of Representatives Election",
+    "answer3": "Congressional Election",
+    "category": "Politics"
+  }
+]

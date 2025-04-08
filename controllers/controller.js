@@ -28,6 +28,7 @@ module.exports = class Controller {
                 },
                 attributes: ['id']
             })
+            questionIds = questionIds.map(question => question.id)
             let randomizedQuestionIds = getRandomIds(questionIds, 10)
             let questions = await Question.findAll({
                 where: {

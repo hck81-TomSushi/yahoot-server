@@ -12,6 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.post('/login', Controller.login)
+app.get('/questions', Controller.getQuestion)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

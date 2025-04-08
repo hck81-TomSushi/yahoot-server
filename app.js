@@ -12,6 +12,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.post('/login', Controller.login)
+app.get('/questions', Controller.getQuestion)
 
 app.get('/hint', Controller.getHint)
 

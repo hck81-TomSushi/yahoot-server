@@ -13,6 +13,7 @@ module.exports = class Controller {
     res.status(200).json({ access_token });
   }
 
+
   static async getQuestion(req, res) {
     try {
       const categories = [
@@ -40,6 +41,7 @@ module.exports = class Controller {
       res.status(200).json({ questions });
     } catch (error) {
       res.status(500).json({ error: "Internal Server Error" });
+
     }
   }
 

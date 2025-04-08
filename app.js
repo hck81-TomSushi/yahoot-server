@@ -13,6 +13,8 @@ app.use(express.urlencoded({ extended: true }))
 
 app.post('/login', Controller.login)
 
+app.get('/hint', Controller.getHint)
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

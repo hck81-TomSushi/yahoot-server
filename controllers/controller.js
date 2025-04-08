@@ -7,6 +7,6 @@ module.exports = class Controller {
             return res.status(400).json({ error: "Username is required" });
         }
         const access_token = signToken({ username })
-        res.status(200).json({ access_token });
+        res.status(200).json({ access_token, username });
     }
 }

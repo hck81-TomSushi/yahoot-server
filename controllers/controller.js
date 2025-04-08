@@ -1,5 +1,5 @@
 const { getRandomIds } = require("../helpers/helper");
-const { signToken } = require("../helpers/jwt");
+const { signToken, verifyToken } = require("../helpers/jwt");
 const { Question } = require("../models");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
@@ -13,6 +13,21 @@ module.exports = class Controller {
     res.status(200).json({ access_token, username });
   }
 
+  static getUsername(req, res) {
+    try {
+        const access_token = req.headers.authorization?.split(" ")[1];
+        if (!access_token) {
+          return res.status(401).json({ error: "Unauthorized" });
+        }
+        const decoded = verifyToken(access_token);
+        if (!decoded) {
+          return res.status(401).json({ error: "Unauthorized" });
+        }
+        res.status(200).json({ username: decoded.username });
+    } catch (error) {
+        return res.status(401).json({ error: "Unauthorized" });
+    }
+  }
 
   static async getQuestion(req, res) {
     try {

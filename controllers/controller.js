@@ -85,9 +85,9 @@ module.exports = class Controller {
       });
       const {question, answers} = req.body;
 
-      const prompt = `Give me a hint to answer this question:
-      question: ${question}.
-      answers: ${answers}.
+      const prompt = `Berikan saya petunjuk untuk menjawab pertanyaan ini.
+      Pertanyaan: ${question}.
+      Pilihan jawaban: ${answers}.
       Use this JSON schema:
       Return: {'hint':string}
       `;
@@ -96,7 +96,7 @@ module.exports = class Controller {
 
       res.json(JSON.parse(result));
     } catch (error) {
-      //   console.log(error);
+      console.log(error);
       res.status(500).json({error: "Internal Server Error"});
     }
   }

@@ -34,12 +34,11 @@ io.on("connection", (socket) => {
   socket.on("game queue", (params) => {
     console.log(params, "<<< message dari client");
     socket.join("room1")
-
+    
     const existingUser = room1.find((user) => user.socketId === socket.id);
     if (!existingUser) {
-      room1.push({ socketId: socket.id, username: params.username });
+      room1.push({ socketId: socket.id, username: params.username, userCode: params.userCode });
       console.log(room1, "<<< room1");
-      
     }
     io.to("room1").emit("game queue", room1)
   })

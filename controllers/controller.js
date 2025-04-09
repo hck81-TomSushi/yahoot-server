@@ -9,6 +9,14 @@ module.exports = class Controller {
     if (!username) {
       return res.status(400).json({ error: "Username is required" });
     }
+    if(username.length < 2){
+      return res.status(400).json({ error: "Username minimum is 3 characters" });
+    }
+    const usernameRegex = /^[a-zA-Z0-9 ]+$/;
+    if (!usernameRegex.test(username)) {
+      return res.status(400).json({ error: "Username must be alphanumeric" });
+    }
+
     const access_token = signToken({ username });
     res.status(200).json({ access_token, username });
   }

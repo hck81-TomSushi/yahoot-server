@@ -55,16 +55,23 @@ module.exports = class Controller {
         attributes: ["id"],
       });
       let randomizedQuestionIds = getRandomIds(questionIds, 10);
+      randomizedQuestionIds = randomizedQuestionIds.map((question) => question.id);
       let questions = await Question.findAll({
         where: {
           id: randomizedQuestionIds,
         },
         attributes: { exclude: ["createdAt", "updatedAt"] },
       });
+      for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [
+          questions[j],
+          questions[i],
+        ];
+      }
       res.status(200).json({ questions });
     } catch (error) {
       res.status(500).json({ error: "Internal Server Error" });
-
     }
   }
 

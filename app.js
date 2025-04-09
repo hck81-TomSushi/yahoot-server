@@ -1,5 +1,5 @@
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config();
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
 }
 const Controller = require('./controllers/controller')
 const express = require('express')
@@ -16,9 +16,9 @@ const io = new Server(server, {
 });
 const room1 = []
 
-app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(cors());
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 
 app.post('/login', Controller.login)
 app.get('/username', Controller.getUsername)

@@ -18,7 +18,7 @@ module.exports = class Controller {
     }
 
     let userCode = Math.floor(Math.random() * 10000);
-    const access_token = signToken({username});
+    const access_token = signToken({username, userCode});
     res.status(200).json({access_token, username, userCode});
   }
 

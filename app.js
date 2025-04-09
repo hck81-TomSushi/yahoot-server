@@ -9,12 +9,11 @@ const Controller = require("./controllers/controller");
 
 app.use(cors());
 app.use(express.json());
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 
 app.post("/login", Controller.login);
 app.get("/username", Controller.getUsername);
 app.get("/questions", Controller.getQuestion);
-
 app.post("/hint", Controller.getHint);
 
 app.listen(port, () => {

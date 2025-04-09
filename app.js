@@ -15,6 +15,8 @@ const io = new Server(server, {
   },
 });
 const room1 = []
+const countdowns = {}
+let countdown = 20
 
 app.use(cors());
 app.use(express.json());
@@ -27,21 +29,38 @@ app.get('/hint', Controller.getHint)
 
 io.on("connection", (socket) => {
   console.log("a user connected", socket.id);
-  
-  // const token = socket.handshake.auth.token;
-  // console.log("Token received:", token);
 
   socket.on("game queue", (params) => {
     console.log(params, "<<< message dari client");
     socket.join("room1")
-
+    
     const existingUser = room1.find((user) => user.socketId === socket.id);
     if (!existingUser) {
-      room1.push({ socketId: socket.id, username: params.username });
+      room1.push({ socketId: socket.id, username: params.username, userCode: params.userCode });
       console.log(room1, "<<< room1");
-      
+      countdown = 20;
     }
-    io.to("room1").emit("game queue", room1)
+    io.to("room1").emit("user queue", room1)
+
+    if (!countdowns["room1"]) {
+      let countdown = 20;
+      console.log("Starting countdown for room1");
+
+      const countdownInterval = setInterval(() => {
+        io.to("room1").emit("countdown", countdown);
+        console.log(`Countdown: ${countdown} seconds`);
+
+        countdown -= 1;
+        if (countdown < 0) {
+          clearInterval(countdownInterval);
+          delete countdowns["room1"];
+          console.log("Countdown finished. Moving room1 to /game");
+          io.to("room1").emit("start game", { path: "/game" });
+        }
+      }, 1000);
+
+      countdowns["room1"] = countdownInterval;
+    }
   })
 
   socket.on("disconnect", () => {

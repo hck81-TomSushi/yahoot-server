@@ -17,8 +17,9 @@ module.exports = class Controller {
       return res.status(400).json({error: "Username must be alphanumeric"});
     }
 
+    let userCode = Math.floor(Math.random() * 10000);
     const access_token = signToken({username});
-    res.status(200).json({access_token, username});
+    res.status(200).json({access_token, username, userCode});
   }
 
   static getUsername(req, res) {

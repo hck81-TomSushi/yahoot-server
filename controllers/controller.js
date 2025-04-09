@@ -72,7 +72,6 @@ module.exports = class Controller {
       res.status(200).json({ questions });
     } catch (error) {
       res.status(500).json({ error: "Internal Server Error" });
-
     }
   }
 

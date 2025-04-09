@@ -32,7 +32,7 @@ module.exports = class Controller {
       if (!decoded) {
         return res.status(401).json({error: "Unauthorized"});
       }
-      res.status(200).json({username: decoded.username});
+      res.status(200).json({username: decoded.username, userCode: decoded.userCode});
     } catch (error) {
       return res.status(401).json({error: "Unauthorized"});
     }

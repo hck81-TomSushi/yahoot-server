@@ -17,8 +17,9 @@ module.exports = class Controller {
       return res.status(400).json({error: "Username must be alphanumeric"});
     }
 
-    const access_token = signToken({username});
-    res.status(200).json({access_token, username});
+    let userCode = Math.floor(Math.random() * 10000);
+    const access_token = signToken({username, userCode});
+    res.status(200).json({access_token, username, userCode});
   }
 
   static getUsername(req, res) {
@@ -31,7 +32,7 @@ module.exports = class Controller {
       if (!decoded) {
         return res.status(401).json({error: "Unauthorized"});
       }
-      res.status(200).json({username: decoded.username});
+      res.status(200).json({username: decoded.username, userCode: decoded.userCode});
     } catch (error) {
       return res.status(401).json({error: "Unauthorized"});
     }
@@ -85,9 +86,9 @@ module.exports = class Controller {
       });
       const {question, answers} = req.body;
 
-      const prompt = `Berikan saya petunjuk untuk menjawab pertanyaan ini.
+      const prompt = `Berikan petunjuk untuk menjawab pertanyaan ini.
       Pertanyaan: ${question}.
-      Pilihan jawaban: ${answers}.
+      Jawaban: ${answers}.
       Use this JSON schema:
       Return: {'hint':string}
       `;
@@ -96,7 +97,7 @@ module.exports = class Controller {
 
       res.json(JSON.parse(result));
     } catch (error) {
-      console.log(error);
+      //   console.log(error);
       res.status(500).json({error: "Internal Server Error"});
     }
   }

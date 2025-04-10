@@ -15,7 +15,7 @@ app.post('/login', Controller.login)
 app.get('/username', Controller.getUsername)
 app.get('/questions', Controller.getQuestion) 
 
-app.get('/hint', Controller.getHint)
+app.post('/hint', Controller.getHint)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

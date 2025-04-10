@@ -16,6 +16,7 @@ const io = new Server(server, {
 });
 const room1 = []
 const countdowns = {}
+const scoreboard = []
 let countdown = 20
 
 app.use(cors());
@@ -61,7 +62,99 @@ io.on("connection", (socket) => {
 
       countdowns["room1"] = countdownInterval;
     }
+
+    socket.on("started", (params) => {
+      console.log(params, "<<< message dari client started");
+      const user = room1.find((user) => user.socketId === socket.id);
+      if (user) {
+        user.userCode = params.userCode;
+        io.to("room1").emit("user queue", room1);
+      }
+
+      if (!scoreboard["room1"]) {
+        scoreboard["room1"] = {}; // Create a scoreboard for room1
+        room1.forEach((user) => {
+          scoreboard["room1"][user.socketId] = 0; // Initialize each user's score to 0
+        });
+        const scoreboardWithUsernames = Object.entries(scoreboard["room1"]).reduce(
+          (acc, [id, userScore]) => {
+            const userInRoom = room1.find((u) => u.socketId === id);
+            if (userInRoom) {
+              acc[userInRoom.username] = userScore; // Map username to score
+            }
+            return acc;
+          },
+          {}
+        );
+    
+        // Emit the initial scoreboard with usernames
+        console.log("Initial scoreboard:", scoreboardWithUsernames);
+        
+        io.to("room1").emit("scoreboard", scoreboardWithUsernames);  
+      }
+
+      // Start a 100-second timer for the room
+      if (!countdowns["room1_started"]) {
+        let countdown = 10; // Set the countdown to 100 seconds
+        console.log("Starting 100-second countdown for room1");
+
+        const countdownInterval = setInterval(() => {
+          io.to("room1").emit("game countdown", countdown); // Emit the remaining time
+          console.log(`Countdown: ${countdown} seconds`);
+
+          countdown -= 1;
+          if (countdown < 0) {
+            clearInterval(countdownInterval); // Stop the countdown
+            delete countdowns["room1_started"]; // Remove the countdown state
+            console.log("Countdown finished. Moving room1 to /result");
+
+            const finalScoreboard = Object.entries(scoreboard["room1"]).reduce(
+              (acc, [socketId, score]) => {
+                const user = room1.find((u) => u.socketId === socketId);
+                if (user) {
+                  acc[user.username] = score;
+                }
+                return acc;
+              },
+              {}
+            );
+
+            io.to("room1").emit("move to result", { path: "/result", scoreboard: finalScoreboard });
+            // io.to("room1").emit("final scoreboard", scoreboard["room1"]); // Emit the final scoreboard
+          }
+        }, 1000);
+
+        // Store the countdown interval for the room
+        countdowns["room1_started"] = countdownInterval;
+      }
+    });
   })
+
+  socket.on("update score", (params) => {
+    const { socketId, score } = params;
+
+  // Find the user in room1 to get their username
+    const user = room1.find((user) => user.socketId === socketId);
+
+    if (user && scoreboard["room1"] && scoreboard["room1"][socketId] !== undefined) {
+      scoreboard["room1"][socketId] += score; // Increment the user's score
+      console.log(`Updated score for ${user.username}: ${scoreboard["room1"][socketId]}`);
+
+      // Transform the scoreboard to use usernames instead of socketIds
+      const scoreboardWithUsernames = Object.entries(scoreboard["room1"]).reduce(
+        (acc, [id, userScore]) => {
+          const userInRoom = room1.find((u) => u.socketId === id);
+          if (userInRoom) {
+            acc[userInRoom.username] = userScore; // Map username to score
+          }
+          return acc;
+        }, {}
+    );
+
+    // Emit the updated scoreboard with usernames
+    io.to("room1").emit("scoreboard", scoreboardWithUsernames);
+  }
+  });
 
   socket.on("disconnect", () => {
     console.log("User disconnected:", socket.id);

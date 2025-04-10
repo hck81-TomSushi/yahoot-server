@@ -46,7 +46,7 @@ io.on("connection", (socket) => {
     io.to("room1").emit("user queue", room1)
 
     if (!countdowns["room1"]) {
-      let countdown = 20;
+      countdown = 20;
       console.log("Starting countdown for room1");
 
       const countdownInterval = setInterval(() => {
@@ -73,29 +73,27 @@ io.on("connection", (socket) => {
         io.to("room1").emit("user queue", room1);
       }
 
-      if (!scoreboard["room1"]) {
-        scoreboard["room1"] = {};
-        room1.forEach((user) => {
-          scoreboard["room1"][user.socketId] = 0;
-        });
-        const scoreboardWithUsernames = Object.entries(scoreboard["room1"]).reduce(
-          (acc, [id, userScore]) => {
-            const userInRoom = room1.find((u) => u.socketId === id);
-            if (userInRoom) {
-              acc[userInRoom.username] = userScore;
-            }
-            return acc;
-          },
-          {}
-        );
-    
-        console.log("Initial scoreboard:", scoreboardWithUsernames);
-        
-        io.to("room1").emit("scoreboard", scoreboardWithUsernames);  
-      }
+      scoreboard["room1"] = {};
+      room1.forEach((user) => {
+        scoreboard["room1"][user.socketId] = 0;
+      });
+      const scoreboardWithUsernames = Object.entries(scoreboard["room1"]).reduce(
+        (acc, [id, userScore]) => {
+          const userInRoom = room1.find((u) => u.socketId === id);
+          if (userInRoom) {
+            acc[userInRoom.username] = userScore;
+          }
+          return acc;
+        },
+        {}
+      );
+  
+      console.log("Initial scoreboard:", scoreboardWithUsernames);
+      
+      io.to("room1").emit("scoreboard", scoreboardWithUsernames);  
 
       if (!countdowns["room1_started"]) {
-        let countdown = 100;
+        let countdown = 50;
         console.log("Starting 100-second countdown for room1");
 
         const countdownInterval = setInterval(() => {
@@ -148,7 +146,7 @@ io.on("connection", (socket) => {
     );
 
     io.to("room1").emit("scoreboard", scoreboardWithUsernames);
-  }
+    }
   });
 
   socket.on("disconnect", () => {

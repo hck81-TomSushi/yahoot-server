@@ -11,7 +11,7 @@ const { Server } = require("socket.io");
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://tomsushi81.web.app",
   },
 });
 const room1 = []
@@ -117,7 +117,11 @@ io.on("connection", (socket) => {
               {}
             );
 
-            io.to("room1").emit("move to result", { path: "/result", scoreboard: finalScoreboard });
+            const sortedFinalScoreboard = Object.fromEntries(
+              Object.entries(finalScoreboard).sort(([, scoreA], [, scoreB]) => scoreB - scoreA)
+            );
+
+            io.to("room1").emit("move to result", { path: "/result", scoreboard: sortedFinalScoreboard });
           }
         }, 1000);
 
@@ -145,7 +149,11 @@ io.on("connection", (socket) => {
         }, {}
     );
 
-    io.to("room1").emit("scoreboard", scoreboardWithUsernames);
+    const sortedScoreboard = Object.fromEntries(
+      Object.entries(scoreboardWithUsernames).sort(([, scoreA], [, scoreB]) => scoreB - scoreA)
+    );
+
+    io.to("room1").emit("scoreboard", sortedScoreboard);
     }
   });
 

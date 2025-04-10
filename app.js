@@ -145,7 +145,11 @@ io.on("connection", (socket) => {
         }, {}
     );
 
-    io.to("room1").emit("scoreboard", scoreboardWithUsernames);
+    const sortedScoreboard = Object.fromEntries(
+      Object.entries(scoreboardWithUsernames).sort(([, scoreA], [, scoreB]) => scoreB - scoreA)
+    );
+
+    io.to("room1").emit("scoreboard", sortedScoreboard);
     }
   });
 

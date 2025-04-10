@@ -117,7 +117,11 @@ io.on("connection", (socket) => {
               {}
             );
 
-            io.to("room1").emit("move to result", { path: "/result", scoreboard: finalScoreboard });
+            const sortedFinalScoreboard = Object.fromEntries(
+              Object.entries(finalScoreboard).sort(([, scoreA], [, scoreB]) => scoreB - scoreA)
+            );
+
+            io.to("room1").emit("move to result", { path: "/result", scoreboard: sortedFinalScoreboard });
           }
         }, 1000);
 

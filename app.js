@@ -25,7 +25,9 @@ app.use(express.urlencoded({extended: true}));
 app.post('/login', Controller.login)
 app.get('/username', Controller.getUsername)
 app.get('/questions', Controller.getQuestion) 
-app.get('/hint', Controller.getHint)
+
+app.post('/hint', Controller.getHint)
+
 
 io.on("connection", (socket) => {
   console.log("a user connected", socket.id);
